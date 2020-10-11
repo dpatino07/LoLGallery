@@ -8,11 +8,17 @@
     <!-- CSS -->
     <link rel="stylesheet" href="css/style.css">
 
+    <!-- LIGHTBOX CSS -->
+    <link rel="stylesheet" href="css/lightbox.css">
+
     <!-- JQUERY -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
     <!-- CUSTOM JS -->
     <script src="js/app.js"></script>
+
+    <!-- LIGHTBOX JS -->
+    <script src="js/lightbox.js"></script>
 </head>
 <body>
     <header>
@@ -20,7 +26,7 @@
             <h1 class="logo">LoL Gallery</h1>
             <nav>
                 <ul>
-                    <li><a href="#">All-Champions</a></li>
+                    <li><a href="#">All Champions</a></li>
                     <li><a href="#">Mid</a></li>
                     <li><a href="#">Top</a></li>
                     <li><a href="#">Jungle</a></li>
@@ -33,33 +39,83 @@
 
     <section>
         <div class="container">
-            <h1 id="heading">Gallery</h1>
+            <h1 id="heading">All Champions</h1>
             <ul id="gallery">
-                <li class="mid"><a href="#"><img src="https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/blt1259276b6d1efa78/5db05fa86e8b0c6d038c5ca2/RiotX_ChampionList_ahri.jpg?quality=90&width=250" alt="Ahri"></a></li>
-                <li class="mid"><a href="#"><img src="https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/bltd9308eedab3a6fa5/5db0600c3a326d6df6c0e7bf/RiotX_ChampionList_syndra.jpg?quality=90&width=250" alt="Syndra"></a></li>
-                <li class="mid"><a href="#"><img src="https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/blt30ddbbdc0549078a/5db0600da6470d6ab91ce5b8/RiotX_ChampionList_teemo.jpg?quality=90&width=250" alt="Teemo"></a></li>
-                <li class="mid"><a href="#"><img src="https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/bltda2b568b0c3e5847/5db06014e9effa6ba5295fb9/RiotX_ChampionList_veigar.jpg?quality=90&width=250" alt="Veigar"></a></li>
-                <li class="mid"><a href="#"><img src="https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/bltd18587f31803441d/5db060226e8b0c6d038c5cc6/RiotX_ChampionList_zoe.jpg?quality=90&width=250" alt="Zoe"></a></li>
-                <li class="top"><a href="#"><img src="https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/blt766d98c27adfde28/5db06004347d1c6baa57be4f/RiotX_ChampionList_singed.jpg?quality=90&width=250" alt="Singed"></a></li>
-                <li class="top"><a href="#"><img src="https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/bltf5f2b8de93870aef/5db05fcea6470d6ab91ce59a/RiotX_ChampionList_irelia.jpg?quality=90&width=250" alt="Irelia"></a></li>
-                <li class="top"><a href="#"><img src="https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/blt6b5bb4d917759184/5db05ffb242f426df132f979/RiotX_ChampionList_renekton.jpg?quality=90&width=250" alt="Renekton"></a></li>
-                <li class="top"><a href="#"><img src="https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/blt20a4b154b1756b56/5db05fe7a6470d6ab91ce5a0/RiotX_ChampionList_nasus.jpg?quality=90&width=250" alt="Nasus"></a></li>
-                <li class="top"><a href="#"><img src="https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/blt6b301613598c3f17/5db05fcf89fb926b491ed81d/RiotX_ChampionList_jax.jpg?quality=90&width=250" alt="Jax"></a></li>
-                <li class="jungle"><a href="#"><img src="https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/blt075d278529811445/5db05fde6af83b6d7032c8fe/RiotX_ChampionList_leesin.jpg?quality=90&width=250" alt="Lee Sin"></a></li>
-                <li class="jungle"><a href="#"><img src="https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/blt3bd79abf330fc807/5db06014dc674266df3d5d56/RiotX_ChampionList_vi.jpg?quality=90&width=250" alt="Vi"></a></li>
-                <li class="jungle"><a href="#"><img src="https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/bltfc73e3c7dda28d31/5db05ff2adc8656c7d24e7f0/RiotX_ChampionList_nocturne.jpg?quality=90&width=250" alt="Nocturne"></a></li>
-                <li class="jungle"><a href="#"><img src="https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/blt282bc8e033db4123/5db05ff9adc8656c7d24e7f6/RiotX_ChampionList_rengar.jpg?quality=90&width=250" alt="Rengar"></a></li>
-                <li class="jungle"><a href="#"><img src="https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/blt5898626d7016d222/5db05fcfdc674266df3d5d3c/RiotX_ChampionList_jarvaniv.jpg?quality=90&width=250" alt="Jarvan"></a></li>
-                <li class="bot"><a href="#"><img src="https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/blt24f4735ebde3c22b/5db08d642dc72966da74686e/RiotX_ChampionList_senna.jpg?quality=90&width=250" alt="Senna"></a></li>
-                <li class="bot"><a href="#"><img src="https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/bltbf6c70d9272a5a2a/5db05fcfe9d7526ab429e532/RiotX_ChampionList_jhin.jpg?quality=90&width=250" alt="Jhin"></a></li>
-                <li class="bot"><a href="#"><img src="https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/blt9eaabc908956c8b0/5db060146af83b6d7032c90a/RiotX_ChampionList_vayne.jpg?quality=90&width=250" alt="Vayne"></a></li>
-                <li class="bot"><a href="#"><img src="https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/bltc0be728e4cbb8f2a/5db05fbc89fb926b491ed80b/RiotX_ChampionList_draven.jpg?quality=90&width=250" alt="Draven"></a></li>
-                <li class="bot"><a href="#"><img src="https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/blt60f687c95425f73f/5db05fbd2dc72966da746704/RiotX_ChampionList_ezreal.jpg?quality=90&width=250" alt="Ezreal"></a></li>
-                <li class="support"><a href="#"><img src="https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/blt46555de3bfa94d44/5db0600b2140ec675d68f4b5/RiotX_ChampionList_thresh.jpg?quality=90&width=250" alt="Thresh"></a></li>
-                <li class="support"><a href="#"><img src="https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/blt28c708665427aef6/5db05fa89481396d6bdd01a6/RiotX_ChampionList_annie.jpg?quality=90&width=250" alt="Annie"></a></li>
-                <li class="support"><a href="#"><img src="https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/blt8d46ada03ea1da8c/5db05fdf347d1c6baa57be31/RiotX_ChampionList_leona.jpg?quality=90&width=250" alt="Leona"></a></li>
-                <li class="support"><a href="#"><img src="https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/bltd7ef7e56ce1fe17b/5db05fb26af83b6d7032c8f8/RiotX_ChampionList_blitzcrank.jpg?quality=90&width=250" alt="Blitzcrank"></a></li>
-                <li class="support"><a href="#"><img src="https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/blt9bc3497cdd04f6d5/5db060229481396d6bdd01c4/RiotX_ChampionList_zyra.jpg?quality=90&width=250" alt="Zyra"></a></li>
+                <li class="mid"><a href="./img/ahri.jpg" data-lightbox="champions" data-title="Ahri" data-desc="“Human emotions can be more volatile than even the deepest magic.”
+
+                    ~ Ahri"><img src="./img/ahri.jpg" alt="Ahri"></a></li>
+                <li class="mid"><a href="./img/syndra.jpg" data-lightbox="champions" data-title="Syndra" data-desc="My potential is limitless. I will not be restrained.
+
+                    ~ Syndra"><img src="./img/syndra.jpg" alt="Syndra"></a></li>
+                <li class="mid"><a href="./img/teemo.jpg" data-lightbox="champions" data-title="Teemo" data-desc="''Teemo rides a thin line between chipper compatriot and unrepentant killer, but there's no one else I'd rather have as a friend.''
+
+                    ~ Tristana"><img src="./img/teemo.jpg" alt="Teemo"></a></li>
+                <li class="mid"><a href="./img/veigar.jpg" data-lightbox="champions" data-title="Veigar" data-desc="You deny the darkness in your soul...
+
+                    ~ Veigar"><img src="./img/veigar.jpg" alt="Veigar"></a></li>
+                <li class="mid"><a href="./img/zoe.jpg" data-lightbox="champions" data-title="Zoe" data-desc="“I bring a message for you all—a warning, a sigil. But first, I wanna see the sparkleflies!”
+
+                    ~ Zoe"><img src="./img/zoe.jpg" alt="Zoe"></a></li>
+                <li class="top"><a href="./img/singed.jpg" data-lightbox="champions" data-title="Singed" data-desc="“You mustn’t die yet; I have far too much to learn from your fragile anatomy.”
+
+                    ~ Singed"><img src="./img/singed.jpg" alt="Singed"></a></li>
+                <li class="top"><a href="./img/irelia.jpg" data-lightbox="champions" data-title="Irelia" data-desc="“There was a time when I danced only for myself. Now, I dance for the First Lands.”
+
+                    ~ Irelia"><img src="./img/irelia.jpg" alt="Irelia"></a></li>
+                <li class="top"><a href="./img/rengar.jpg" data-lightbox="champions" data-title="Renekton" data-desc="“Blood and vengeance.”
+
+                    ~ Renekton"><img src="./img/renekton.jpg" alt="Renekton"></a></li>
+                <li class="top"><a href="./img/nasus.jpg" data-lightbox="champions" data-title="Nasus" data-desc="“What was fallen will be great again.”
+
+                    ~ Nasus"><img src="./img/nasus.jpg" alt="Nasus"></a></li>
+                <li class="top"><a href="./img/jax.jpg" data-lightbox="champions" data-title="Jax" data-desc="“Strength and will are what make a weapon.”
+
+                    ~ Jax"><img src="./img/jax.jpg" alt="Jax"></a></li>
+                <li class="jungle"><a href="./img/leesin.jpg" data-lightbox="champions" data-title="Lee Sin" data-desc="“Enlightenment is knowing the value of one’s ignorance.”
+
+                    ~ Lee Sin"><img src="./img/leesin.jpg" alt="Lee Sin"></a></li>
+                <li class="jungle"><a href="./img/vi.jpg" data-lightbox="champions" data-title="Vi" data-desc="“We can either do this the hard way or… Oh wait, no. There's just the hard way.”
+
+                    ~ Vi"><img src="./img/vi.jpg" alt="Vi"></a></li>
+                <li class="jungle"><a href="./img/nocturne.jpg" data-lightbox="champions" data-title="Nocturne" data-desc="The darkness is closing in...
+
+                    ~ Nocturne"><img src="./img/nocturne.jpg" alt="Nocturne"></a></li>
+                <li class="jungle"><a href="./img/rengar.jpg" data-lightbox="champions" data-title="Rengar" data-desc="“Prey on the weak and you may survive. Prey on the strong and you will truly live.”
+
+                    ~ Rengar"><img src="./img/rengar.jpg" alt="Rengar"></a></li>
+                <li class="jungle"><a href="./img/j4.jpg" data-lightbox="champions" data-title="Jarvan IV" data-desc="“Words may make a ruler, but only actions make history.”
+
+                    ~ Jarvan IV"><img src="./img/j4.jpg" alt="Jarvan"></a></li>
+                <li class="bot"><a href="./img/senna.jpg" data-lightbox="champions" data-title="Senna" data-desc="“As shadows embrace the light, I will embrace them...”
+
+                    ~ Senna"><img src="./img/senna.jpg" alt="Senna"></a></li>
+                <li class="bot"><a href="./img/jhin.jpg" data-lightbox="champions" data-title="Jhin" data-desc="“Art requires a certain… cruelty.”
+
+                    ~ Jhin"><img src="./img/jhin.jpg" alt="Jhin"></a></li>
+                <li class="bot"><a href="./img/vayne.jpg" data-lightbox="champions" data-title="Vayne" data-desc="“I don’t kill creatures like you because it’s the right thing to do. I kill you because I enjoy it.”
+
+                    ~ Vayne"><img src="./img/vayne.jpg" alt="Vayne"></a></li>
+                <li class="bot"><a href="./img/draven.jpg" data-lightbox="champions" data-title="Draven" data-desc="'' 'The best' is wherever I decide to set the bar each day.''
+
+                    ~ Draven"><img src="./img/draven.jpg" alt="Draven"></a></li>
+                <li class="bot"><a href="./img/ezreal.jpg" data-lightbox="champions" data-title="Ezreal" data-desc="“If I don’t know the rules, then how can I be breaking them?”
+
+                    ~ Ezreal"><img src="./img/ezreal.jpg" alt="Ezreal"></a></li>
+                <li class="support"><a href="./img/thresh.jpg" data-lightbox="champions" data-title="Thresh" data-desc="“The mind is a wondrous thing to tear apart.”
+
+                    ~ Thresh"><img src="./img/thresh.jpg" alt="Thresh"></a></li>
+                <li class="support"><a href="./img/annie.jpg" data-lightbox="champions" data-title="Annie" data-desc="“Ashes, ashes, they all fall down.”
+
+                    ~ Annie"><img src="./img/annie.jpg" alt="Annie"></a></li>
+                <li class="support"><a href="./img/leona.jpg" data-lightbox="champions" data-title="Leona" data-desc="“By the light of the Sun, the world is beheld.”
+
+                    ~ Leona"><img src="./img/leona.jpg" alt="Leona"></a></li>
+                <li class="support"><a href="./img/blitzcrank.jpg" data-lightbox="champions" data-title="Blitzcrank" data-desc="“A SINGLE GEAR TURNING CAN MAKE ALL THE DIFFERENCE.”
+
+                    ~ Blitzcrank"><img src="./img/blitzcrank.jpg" alt="Blitzcrank"></a></li>
+                <li class="support"><a href="./img/zyra.jpg" data-lightbox="champions" data-title="Zyra" data-desc="“Where are your friends? Mine are all around…”
+
+                    ~ Zyra"><img src="./img/zyra.jpg" alt="Zyra"></a></li>
             </ul>
         </div>
     </section>
@@ -67,5 +123,6 @@
     <footer>
         &copy;2020 Dom Patino
     </footer>
+
 </body>
 </html>
